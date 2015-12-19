@@ -248,7 +248,7 @@ func _copy(size int64, mode os.FileMode, fileName, destination string, contents 
 	defer session.Close()
 
 	cmd := "scp -t " + destination
-	// Done syncronously in order to verify that the file is there before we attempt to remove it in testing.
+	// Done synchronously in order to verify that the file is there before we attempt to remove it in testing.
 	// This can be safely run from a goroutine, and a call to session.Run(cmd) will return immediately
 	// In that case, it would be best to do something like:
 	/*
