@@ -6,3 +6,5 @@ This is intended to be used within the confines of a VPC/VPN situation.
 GTN, or GoTunnel, is an application that establishes an SSH connection to a remote machine, and then establishes a connection to a remote host over a specified host:port and proxies information as if the remote service, such as MySQL, is running on the user's local machine.
 
 Currently, in order to make this compile, you need to fix import paths. I wrote this on my own time at SessionM and have been using it there, so currently it is still part of SessionM's shared library.
+
+Server Channel handling implementation taken from https://gist.github.com/jpillora/b480fde82bff51a06238
